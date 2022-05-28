@@ -1,0 +1,22 @@
+<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = 'IdCard.css') }}"/>
+<div class="id-card-tag"></div>
+	<div class="id-card-tag-strip"></div>
+	<div class="id-card-hook"></div>
+	<div class="id-card-holder">
+		<div class="id-card">
+			<div class="photo">
+				<img src="{{ url_for('static', filename = 'Temp.jpg') }}" height = "200">
+			</div>
+			<h2>{{ name }}</h2>
+            <h2>{{ id }}</h2>
+			<h2>Gender : {{ gender }}</h2>
+			<h2>Age : {{ age }} years</h2>
+			<h2>Entry Time : {{ time }}</h2>
+
+		</div>
+	</div>
+<a href = "{{ url_for('hello_world') }}">
+<button>
+    <h2>Main Menu</h2>
+</button>
+</a>

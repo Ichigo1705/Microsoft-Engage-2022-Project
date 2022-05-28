@@ -1,0 +1,30 @@
+<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = 'Form.css') }}"/>
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" action="{{ url_for('confirm') }}" method="POST">
+				<div class="login__field">
+					<h3>Your gender is predicted as {{ gender }}</h3>
+					<i class="login__icon fas fa-user"></i>
+					<input type="radio" class="login__input" placeholder="gender" name = "gender" value = "yes" checked>YES</input>
+					<input type="radio" class="login__input" placeholder="gender" name = "gender" value = "no" checked>NO</input>
+				</div>
+				<div class="login__field">
+					<h3>Your age is predicted within {{ age }} years. Please Enter your age:</h3>
+					<i class="login__icon fas fa-lock"></i>
+					<input type="text" class="login__input" placeholder="age" name = "age">
+				</div>
+				<button class="button login__submit">
+					<span class="button__text">Continue</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>				
+			</form>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>

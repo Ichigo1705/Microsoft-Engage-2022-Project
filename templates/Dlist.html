@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = 'Alist.css') }}"/>
+<html>
+<head>
+    <title>For loop in Flask</title>
+</head>
+<a href = "{{ url_for('hello_world') }}">
+    <button>
+        <h2>Back</h2>
+    </button>
+    </a>
+<body>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Person Id</th>
+          <th>Gender</th>
+          <th>Age</th>
+        </tr>
+        {%for i in range(0, length)%}
+            <tr>
+                <td><strong>{{ data[i][0] }}</strong></td>
+                <td><strong>{{ data[i][1] }}</strong></td>
+                <td><strong>{{ data[i][2] }}</strong></td>
+                <td><strong>{{ data[i][3] }} years</strong></td>
+            </tr>
+        {%endfor%}
+  
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = 'Erase_message.css') }}"/>
+<title>Hello</title>
+<body><strong>Are you sure you want to erase the Person Detail records</strong></body>
+<br>
+<a href = "{{ url_for('erase2') }}">
+    <button class = "b1">
+            <strong>Yes</strong>
+    </button>
+</a>
+<a href = "{{ url_for('hello_world') }}">
+    <button class = "b2">
+            <strong>No</strong>
+    </button>
+</a>
+</html>

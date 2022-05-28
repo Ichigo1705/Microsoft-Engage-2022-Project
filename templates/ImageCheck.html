@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = 'ImageCheck.css') }}"/>
+<html>
+    <body>
+        <img src = "{{ url_for('static', filename = 'Temp.jpg') }}" alt = "Test Image" width="900" height="600" />
+    </body>
+        <a href = "{{ url_for('wait') }}">
+            <button class = "try_again">
+                    Take another Picture
+            </button>
+        </a>
+        <a href = "{{ url_for('function') }}">
+            <button class = "main_menu">
+                    Detect
+            </button>
+        </a>
+
+</html>

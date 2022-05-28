@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("data:image/jpeg;base64,{{ img_data }}");
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="{{ url_for('Rhello') }}" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Enter Details</a>
+    <a href="hello" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Attendance Login</a>
+    <a href="{{ url_for('Dlist') }}" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Person Details</a>
+    <a href="{{ url_for('Alist') }}" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Attendance List</a>
+    <a href="{{ url_for('erase_message2') }}" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Clear Details</a>
+    <a href="{{ url_for('erase_message') }}" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Clear Attendance</a>
+  </div>
+</nav>
+
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Face Recognition</b></h1>
+  </header>
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
