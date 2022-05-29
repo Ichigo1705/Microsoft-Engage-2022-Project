@@ -36,3 +36,13 @@ We will see the `HOME page` on localhost as:
 6. Clear Attendance
 
 ![Image 3](Image3.png)
+
+## Enter Details : Feature to be used by the admin for entering details of users
+## Attendance Login : Feature to be used by the user for log in using Face Recognition
+## Person Details : Feature which shows all the details of the registered user
+## Attendance list : Feature which shows the attendance of the users
+## Clear Details : Feature which clears the database of the registered users
+## Clear Attendance : Feature which clears the attendance list
+
+**I have used the facenet-pytorch package for face detection and face recognition in my project.
+Further details regarding this can be found in this [link](https://github.com/Ichigo1705/facenet-pytorch)**
