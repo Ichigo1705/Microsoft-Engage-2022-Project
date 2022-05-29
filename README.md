@@ -53,3 +53,8 @@ Further details regarding this can be found in this [link](https://github.com/Ic
 
 # This is the Web flow diagram of the app
 ![Image 4](Image4.png)
+
+# Note
+For proper functioning of the program, please ensure that the user is sat in a well lighted area for a clear webcam picture and only one user at a time sits in front of the webcam.
+
+Also the images uploaded in the database should be solo images of only the registered user and not group images
