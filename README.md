@@ -52,7 +52,7 @@ We will see the `HOME page` on localhost as:
 Further details regarding this can be found in this [link](https://github.com/Ichigo1705/facenet-pytorch)**
 
 **For the gender and age-group detection I have used the models trained by Tal Hassner and Gil Levi in opencv-python.
-Further details regarding this can be found in this [link](https://github.com/Ichigo1705/Gender-and-Age-Detection)
+Further details regarding this can be found in this [link](https://github.com/Ichigo1705/Gender-and-Age-Detection)**
 
 # This is the Web flow diagram of the app
 ![Image 4](Image4.png)
