@@ -22,4 +22,6 @@ python app.py
 ```
 
 Start the localhost by `ctrl+click`:
+![Image 1](Image1.png)
 
+We will see the HOME page on localhost as:
