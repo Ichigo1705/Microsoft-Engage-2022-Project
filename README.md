@@ -44,12 +44,20 @@ We will see the `HOME page` on localhost as:
 ## Enter Details : Feature to be used by the admin for entering details of users
 ## Attendance Login : Feature to be used by the user for log in using Face Recognition
 ## Person Details : Feature which shows all the details of the registered user
-## Attendance list : Feature which shows the attendance of the users
+## Attendance list : Feature which shows the attendance of the users. It only stores the first attendance of a user and does not repeat the same name
 ## Clear Details : Feature which clears the database of the registered users
 ## Clear Attendance : Feature which clears the attendance list
 
 **I have used the facenet-pytorch package for face detection and face recognition in my project.
 Further details regarding this can be found in this [link](https://github.com/Ichigo1705/facenet-pytorch)**
 
+**For the gender and age-group detection I have used the models trained by Tal Hassner and Gil Levi in opencv-python.
+Further details regarding this can be found in this [link](https://github.com/Ichigo1705/Gender-and-Age-Detection)**
+
 # This is the Web flow diagram of the app
 ![Image 4](Image4.png)
+
+# Note
+For proper functioning of the program, please ensure that the user is sat in a well lighted area for a clear webcam picture and only one user at a time sits in front of the webcam.
+
+Also the images uploaded in the database should be solo images of only the registered user and not group images
