@@ -286,10 +286,23 @@ def Rwait():
                nm += session["Rname"][i].upper()
            else:
                nm += session["Rname"][i]
-       cur.execute('''INSERT INTO DETAILS (col1, col2) VALUES (?, ?);''', (nm, session["Rid"]))
+
+       s1 = cur.execute('''SELECT EXISTS(SELECT 1 FROM DETAILS WHERE col1=?);''', (nm,))
+       s1 = list(s1)
+       s1 = s1[0][0]
+       s2 = cur.execute('''SELECT EXISTS(SELECT 1 FROM IMAGES WHERE col1=?);''', (nm,))
+       s2 = list(s2)
+       s2 = s2[0][0]
+       
+       if s1 == 0:
+          cur.execute('''INSERT INTO DETAILS (col1, col2) VALUES (?, ?);''', (nm, session["Rid"]))
+       
        empphoto = convertToBinaryData(os.path.join(app.config['UPLOAD FOLDER'], session["image"]))
        os.remove(os.path.join(app.config['UPLOAD FOLDER'], session["image"]))
-       cur.execute('''INSERT INTO IMAGES (col1, col2) VALUES (?, ?);''', (nm, empphoto))
+       
+       if s2 == 0:
+          cur.execute('''INSERT INTO IMAGES (col1, col2) VALUES (?, ?);''', (nm, empphoto))
+       
        con.commit()
        con.close()
        return redirect(url_for('hello_world'))
