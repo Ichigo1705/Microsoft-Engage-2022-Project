@@ -46,3 +46,6 @@ We will see the `HOME page` on localhost as:
 
 **I have used the facenet-pytorch package for face detection and face recognition in my project.
 Further details regarding this can be found in this [link](https://github.com/Ichigo1705/facenet-pytorch)**
+
+# This is the Web flow diagram of the app
+![Image 4](Image4.png)
