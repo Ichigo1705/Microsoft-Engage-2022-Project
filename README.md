@@ -24,4 +24,15 @@ python app.py
 Start the localhost by `ctrl+click`:
 ![Image 1](Image1.png)
 
-We will see the HOME page on localhost as:
+We will see the `HOME page` on localhost as:
+![Image 2](Image2.png)
+
+### On the top right corner we see the index button, Pressing it reveals 6 options: 
+1. Enter Details
+2. Attendance Login
+3. Person Details
+4. Attendance List
+5. Clear Details
+6. Clear Attendance
+
+![Image 3](Image3.png)
