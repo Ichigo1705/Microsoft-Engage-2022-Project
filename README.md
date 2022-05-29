@@ -8,7 +8,11 @@
 Please use `python version 3.7.7` for better usage of the program and run it on Windows
 
 ## Prerequisites :
-Clone the repository using `git clone https://github.com/Ichigo1705/Microsoft-Engage-2022-Project.git` in git bash or windows terminal
+Clone the repository using :
+```bash
+# with git bash or windows terminal:
+git clone https://github.com/Ichigo1705/Microsoft-Engage-2022-Project.git
+```
 Install the requirements in the folder using :
 ```bash
 # with pip:
